@@ -1,0 +1,256 @@
+
+:root{
+    --mainText: #292931;
+    --secondaryText: #4b5156; 
+    --realColor: #fff;
+    --backgroundColor: #d3d3f1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffff;
+    font-family: 'Big Shoulders Text', cursive;
+}
+
+
+section{
+    height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr auto;  
+    gap:1rem;
+    position: relative;
+    left: 9rem;
+    background: #fafaf6;
+}
+
+.left-bar{
+    display: grid;
+    gap:1rem;
+    grid-template-areas: 
+    'first-right-bar  first-right-bar'
+    'second-right-bar second-right-bar';
+     margin-right: 1rem;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+   
+}
+
+.first-left-bar{
+    grid-area: first-right-bar;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 1px 2px rgb(0,0,0,0.1);
+}
+
+
+.first-left-bar a{
+    text-decoration: none;
+    color: #c5e3f6;
+    font-weight: bolder;
+}
+
+.about-me-pic{
+    position: relative;
+    top: 2rem;
+    display: grid;
+}
+
+.name-title{
+    text-align: center;
+    position: relative;
+    top:-1rem;
+    left: 2rem;
+    align-items: center;
+
+}
+
+.name-title h3{
+    font-weight: bolder;
+    font-size: 25px;
+    color:  #c5e3f6;
+}
+
+/* button{
+    background: blue;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 2px rgb(0,0,0,0.1);
+    position: absolute;
+    left: 5rem;
+    bottom: 4rem;
+    font-weight: bolder;
+} */
+
+button:focus{
+    outline: none;    
+}
+
+button:active{
+    transform: translate(2px, 2px);
+}
+
+.profile_pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    top:1rem;
+    left:2rem;
+
+}
+
+.about-me{
+    position: relative;
+    top:5rem;
+    max-width: 500px;
+
+}
+
+.about-me h1{
+    color:  #c5e3f6;;
+}
+
+.second-left-bar{
+    grid-area: second-right-bar;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 2px rgb(0,0,0,0.1);
+}
+
+.second-left-bar h3{
+    color: navy;
+    margin: 2rem;
+}
+
+.second-left-bar h6{
+    margin: 2rem;
+    font-size: large;
+    color: navy;
+}
+
+.second-left-bar h4{
+    margin: 2rem;
+    color: blue;
+    text-decoration: underline;
+}
+.second-left-bar ul{
+    list-style: none;
+    margin: 2rem;
+    color: blue;
+}
+
+.second-left-bar h2{
+    padding-top: 2rem;
+    color:navy;
+}
+
+
+
+.contact{
+    display: grid;
+    place-items: center;
+}
+
+ i{
+    margin-top: 30px;
+    margin: 12px;
+}
+
+
+.right-bar{
+    color: #292931;
+    background-color: #fafaf6;
+    margin-top: 1rem;
+    border-radius: 5px;
+    position: relative;
+    left:-1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.project{
+    height: 100vh;
+}
+
+
+.box{
+    width: 95%;
+    height:200px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px 2px rgb(0,0,0,0.1);
+    margin: 10px;
+    text-align: center;
+    transition: 2s ease-in-out;
+
+}
+
+.box:hover{
+    box-shadow: 0 5px 5px 5px rgb(0,0,0,0.1), 0 15px 20px 5px rgb(0,0,0,0.1), 0 1px 1px 2px rgb(0,0,0,0.1), 0 1px 1px 2px rgb(0,0,0,0.1);
+}
+
+.box a{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.box h5, p{
+    padding: 1rem;
+}
+
+
+@media screen and (max-width:1200px){
+    .mobile-page{
+        width: 100%;
+        align-self: center;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        
+    }
+
+    .first-left-bar{
+        display: grid;
+        padding-bottom: 7rem;
+        place-items: center;
+    }
+
+    .profile_pic{
+        margin-left: -4rem;
+    }
+
+    .name-title{
+        margin-left: -4rem;
+        margin-top: 2rem;
+    }
+
+   .about-me{
+       text-align: center;
+   }
+
+    .right-bar{
+        left:0;
+
+    }
+    i{
+        padding-bottom: 50px;
+    }
+}
+
+
